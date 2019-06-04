@@ -19,7 +19,9 @@ class MusicLibraryController
     input = gets.chomp until input == "exit"
     
     case input
-    when input ==
+    when "list songs"
+      list_songs
+    end
   end
 
   def list_songs
