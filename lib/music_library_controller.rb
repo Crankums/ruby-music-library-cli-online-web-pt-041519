@@ -55,7 +55,7 @@ class MusicLibraryController
   end
   
   def play_song
-    list
+    playlist = Songs.all.each.with_index(1)
     puts "Which song number would you like to play?"
     input = gets.strip
     binding.pry
