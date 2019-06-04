@@ -33,10 +33,10 @@ class MusicLibraryController
     sorted_genres = Genre.all.sort{|a, b| a.name <=> b.name}
     sorted_genres.each.with_index{|genre, index| puts "#{index + 1}. #{genre.name}"}
   end
-  
+  binding.pry
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
-    binding.pry
+    
     input = gets.strip
     
   end
