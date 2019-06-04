@@ -59,7 +59,9 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
     binding.pry
-    if input.between?(1, list_songs.length)
+    if input.between?(1, playlist.length)
+      puts
+
       
     end
   end
