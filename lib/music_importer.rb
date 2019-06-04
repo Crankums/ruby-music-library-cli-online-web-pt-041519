@@ -6,7 +6,7 @@ class MusicImporter
   end
 
   def files
-    Dir.entries('./spec/fixtures/mp3s').select {|f| !File.directory? f}
+    Dir.entries(@path).select {|f| !File.directory? f}
   end
 
   def import
