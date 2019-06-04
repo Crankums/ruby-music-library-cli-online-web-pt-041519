@@ -52,4 +52,7 @@ class MusicLibraryController
       sorted_list.each.with_index{|song, index| puts "#{index + 1}. #{song.artist.name} - #{song.name}"}
     end
   end
+  
+  def play_song
+  end
 end
