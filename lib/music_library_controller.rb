@@ -1,7 +1,8 @@
 class MusicLibraryController
 
   def initialize(path = './db/mp3s')
-    MusicImporter.new(path).import
+    new_object = MusicImporter.new(path)
+    new_object.import
   end
   
   def call
