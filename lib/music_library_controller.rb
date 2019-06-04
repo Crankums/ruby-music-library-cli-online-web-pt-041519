@@ -61,7 +61,6 @@ class MusicLibraryController
     binding.pry
     if input.between?(1, list_songs.length)
       
-      end  
     end
   end
 end
