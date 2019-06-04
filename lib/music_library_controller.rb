@@ -55,8 +55,6 @@ class MusicLibraryController
   
   def play_song
     puts "Which song number would you like to play?"
-    puts list_songs
-    
     input = gets.strip
     if input.between?(1, list_songs.length)
       
