@@ -60,7 +60,7 @@ class MusicLibraryController
     input = gets.strip.to_i
     #binding.pry
     if input.between?(1, playlist.length)
-      selection = playlist[input]
+      selection = playlist[input-1]
       puts "Playing #{selection.name} by #{selection.artist.name}"
     end
   end
