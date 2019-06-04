@@ -58,7 +58,8 @@ class MusicLibraryController
     puts list_songs
     
     input = gets.strip
-    if input.between?(1)
+    if input.between?(1, list_songs.length)
+      
     binding.pry
     
   end
