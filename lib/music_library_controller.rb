@@ -58,6 +58,7 @@ class MusicLibraryController
     puts list_songs
     
     input = gets.strip
+    if input 
     binding.pry
     
   end
