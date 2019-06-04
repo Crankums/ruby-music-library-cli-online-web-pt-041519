@@ -50,5 +50,6 @@ class MusicLibraryController
       genre = Genre.find_by_name(input)
       sorted_list = genre.all.sort
       binding.pry
+    end
   end
 end
