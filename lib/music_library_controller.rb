@@ -59,7 +59,7 @@ class MusicLibraryController
     input = gets.strip
     binding.pry
     if input.between?(1, list_songs.length)
-      list_songs.each do |index|
+      
       end  
     end
   end
