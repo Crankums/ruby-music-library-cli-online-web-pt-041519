@@ -58,7 +58,7 @@ class MusicLibraryController
     playlist = Song.all.sort_by{|song| song.name}
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
-    binding.pry
+    #binding.pry
     if input.between?(1, playlist.length)
       selection = playlist[input]
     end
